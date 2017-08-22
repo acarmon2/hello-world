@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 #include <stdint.h>
 
 uint16_t crc_init;
@@ -8,7 +8,8 @@ int cont;
 uint8_t lcrc;
 uint8_t rcrc;
 
-// Function to calculate crc-16 update
+// Function to calculate crc-16 update, in this case the CRC-16 is the classical IBM reverse polynomial 
+// 0xA001
 uint16_t crc16_update(uint16_t crc, uint8_t a)
 {
   int i;
