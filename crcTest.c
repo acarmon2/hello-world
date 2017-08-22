@@ -35,7 +35,7 @@ int main()
   printf("Init value of crc = %04X \n", crc_init);
   // To get a final value of cero, we need the init_crc = ~0 and pass
   // the frame from group (0x58) to the final payload. The final
-  // CRC was 0xAA02 and the reverse is first use 0x02 and then 0xAA
+  // CRC was 0xA442 and the reverse is first use 0x42 and then 0xA4
   lcrc = (uint8_t)crc_init;
   printf("Init value of lcrc = %02X \n", lcrc);
   rcrc = (crc_init >> 8);
